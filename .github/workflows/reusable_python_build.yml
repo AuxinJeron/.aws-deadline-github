@@ -42,7 +42,7 @@ jobs:
     - name: setup ${{ inputs.os }}
       if: inputs.os == 'ubuntu-latest'
       run: |
-        apt-get install libgl1
+        sudo apt-get install libgl1
 
     - name: Set up Python ${{ inputs.python-version }}
       uses: actions/setup-python@v5
